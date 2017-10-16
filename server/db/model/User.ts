@@ -38,11 +38,12 @@ let schema = new Schema(Object.assign({
       type: Schema.Types.String,
       trim: true,
       required: [true, messages.surname.REQUIRED]
+    },
+    nickname: {
+      type: Schema.Types.String,
+      trim: true,
+      required: [true, messages.nickname.REQUIRED]
     }
-  },
-  birthdate: {
-    type: Schema.Types.Date,
-    required: [true, messages.birthdate.REQUIRED],
   },
   email: {
     type: Schema.Types.String,
@@ -52,10 +53,6 @@ let schema = new Schema(Object.assign({
   password: {
     type: Schema.Types.String,
     required: [true, messages.password.REQUIRED]
-  },
-  cpf: {
-    type: Schema.Types.String,
-    required: [true, messages.cpf.REQUIRED]
   },
   logged: {
     type: Schema.Types.Boolean,
@@ -69,6 +66,18 @@ let schema = new Schema(Object.assign({
     type: Schema.Types.Boolean,
     default: false
   },
+  reports: {
+    type: Schema.Types.ObjectId,
+    ref: 'report',
+  },
+  score: {
+    type: Schema.Types.Number,
+    default: 0,
+  },
+  acc_score: {
+    type: Schema.Types.Number,
+    default: 0,
+  }
 }, BaseSchema), schema_options);
 
 let UserModel = model("user", schema);
