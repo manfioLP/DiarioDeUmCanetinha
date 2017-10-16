@@ -58,3 +58,6 @@ let schema = new Schema(Object.assign({
         }
     }
 }, BaseSchema), schema_options);
+
+let ReportModel = model ('report', schema);
+export {ReportModel as Model};
