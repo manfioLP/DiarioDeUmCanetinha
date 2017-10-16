@@ -1,4 +1,4 @@
-import {model, Schema} from "mongoose";
+import {model, Schema, SchemaType} from "mongoose";
 import {BaseSchema} from "../BaseSchema";
 import * as path from "path";
 
@@ -39,6 +39,38 @@ let schema = new Schema(Object.assign( {
     ref: 'user',
     required: [true, messages.text.REQUIRED]
   },
-  register: 
+  littlePen: {  // littlePen is the older register.
+    type: Schema.Types.ObjectId,
+    ref: 'user',
+    required: [true, messages.text.REQUIRED]
+  },
+  votes: {
+    type: [ {
+      user: {
+        type: Schema.Types.ObjectId,
+        ref: 'user'
+      },
+      vote: {
+        type: Schema.Types.Number,
+        min: 0,
+        max: 1
+      }
+    }],
+    default: []
+  },
+  defense: {
+    type: Schema.Types.String,
+    trim: true,
+    max: 100,
+    default: null
+  },
+  type: {
+    type: Schema.Types.String,
+    default: null
+
+  }
 
 }, BaseSchema), schema_options);
+
+let JokeModel = model ('joke', schema);
+export {JokeModel as Model};
