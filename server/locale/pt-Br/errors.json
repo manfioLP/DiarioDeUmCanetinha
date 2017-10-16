@@ -1,0 +1,32 @@
+{
+  "login": {
+    "user_not_found": {
+      "title": "Usuario não cadastrado!",
+      "description": "O usuario é inexistente ou você escreveu o email erroneamente.",
+      "buttons": [
+        {
+          "label": "ok",
+          "method": null
+        },
+        {
+          "label": "Teste method",
+          "method": "teste"
+        },
+        {
+          "label": "outro Teste method",
+          "method": "teste_outro"
+        }
+      ]
+    },
+    "wrong_password": {
+      "title": "Senha errada!",
+      "description": "A senha não confere.",
+      "buttons": [
+        {
+          "label": "OK",
+          "method": null
+        }
+      ]
+    }
+  }
+}

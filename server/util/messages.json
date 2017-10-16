@@ -1,0 +1,208 @@
+{
+  "idioma": {
+    "nome": {
+      "REQUIRED": "tem que ter."
+    }
+  },
+  "user":{
+    "first_name": {
+      "REQUIRED": "Toda pessoa cadastrada deve ter um nome."
+    },
+    "surname": {
+      "REQUIRED": "Toda pessoa cadastrada deve ter um sobrenome."
+    },
+    "birthdate": {
+      "REQUIRED": "Toda pessoa cadastrada deve ter uma data de nascimento."
+    },
+    "matriculation": {
+      "REQUIRED": "Toda pessoa cadastrada deve ter uma matrícula."
+    },
+    "cpf": {
+      "REQUIRED": "CPF é obrigatorio."
+    },
+    "email": {
+      "REQUIRED": "Email é obrigatorio.",
+      "UNIQUE": "Email ja cadastrado."
+    },
+    "password": {
+      "REQUIRED": "Senha é obrigatoria."
+    },
+    "type": {
+      "REQUIRED": "Tipo é obrigatorio."
+    },
+    "login":{
+      "USUARIO_INEXISTENTE": "Usuário não cadastrado.",
+      "EMAIL_INVALIDO": "E-mail inválido.",
+      "SENHA_INVALIDA": "Senha inválida.",
+      "REMOVIDO": "Conta desativada.",
+      "ERROR_LOGIN_UPDATE": "Erro ao atualizar o usuário para logado.",
+      "botoes":{
+        "WANNA_LOGOUT": {
+          "SIM":{
+            "label": "Sim",
+            "funcao": "forcar_login"
+          },
+          "NAO":{
+            "label": "Nao",
+            "funcao": "fechar_modal"
+          }
+        }
+      }
+    },
+    "subject":{
+      "REQUIRED": "Professor deve ter pelo menos uma disciplina."
+    },
+    "monitoring":{
+      "REQUIRED": "Monitor deve estar vinculado a uma monitoria."
+    }
+  },
+
+  "monitoring": {
+    "first_name": {
+      "REQUIRED": "Toda pessoa cadastrada deve ter um nome."
+    },
+    "surname": {
+      "REQUIRED": "Toda pessoa cadastrada deve ter um sobrenome."
+    },
+    "matriculation": {
+      "REQUIRED": "Toda pessoa cadastrada deve ter uma matrícula."
+    },
+    "email": {
+      "REQUIRED": "Email é obrigatorio."
+    },
+    "max_daily_students": {
+      "REQUIRED": "Monitoria deve ter um número máximo de atendimentos."
+    },
+    "weekday": {
+      "REQUIRED": "Monitoria deve ter pelo menos um dia na semana."
+    },
+    "start_time":{
+      "REQUIRED": "Monitoria deve ter um horário de começo."
+    },
+    "end_time": {
+      "REQUIRED": "Monitoria deve ter um horário de fim."
+    },
+    "start_date": {
+      "REQUIRED": "Monitoria deve ter uma data de início."
+    },
+    "end_date": {
+      "REQUIRED": "Monitoria deve ter uma data de fim."
+    },
+    "monitor": {
+      "REQUIRED": "Monitoria deve ter um monitor."
+    },
+    "subject": {
+      "REQUIRED": "Monitoria deve ter uma disciplina."
+    },
+    "date": {
+      "REQUIRED": "Agendamento deve ter uma data."
+    },
+    "student": {
+      "REQUIRED": "Agendamento deve ter um aluno."
+    },
+    "grade": {
+      "REQUIRED": "Avaliação deve ter uma nota."
+    }
+  },
+
+  "subject": {
+    "name": {
+      "REQUIRED": "Disciplina deve ter um nome."
+    },
+    "code": {
+      "REQUIRED": "Disciplina deve ter um código."
+    },
+    "professor":{
+      "REQUIRED": "Disciplina deve ter no minimo um professor."
+    },
+    "responsible": {
+      "REQUIRED": "Disciplina deve ter um responsável."
+    },
+    "monitoring": {
+      "REQUIRED": "Disciplina deve ter no minimo uma monitoria."
+    },
+    "end_date": {
+      "REQUIRED": "Monitoria deve ter uma data de fim."
+    },
+    "monitor": {
+      "REQUIRED": "Monitoria deve ter um monitor."
+    },
+    "subject": {
+      "REQUIRED": "Monitoria deve ter uma disciplina."
+    },
+    "date": {
+      "REQUIRED": "Agendamento deve ter uma data."
+    },
+    "student": {
+      "REQUIRED": "Agendamento deve ter um aluno."
+    },
+    "grade": {
+      "REQUIRED": "Avaliação deve ter uma nota."
+    }
+  },
+
+  "student": {
+    "first_name": {
+      "REQUIRED": "Toda pessoa cadastrada deve ter um nome."
+    },
+    "surname": {
+      "REQUIRED": "Toda pessoa cadastrada deve ter um sobrenome."
+    },
+    "matriculation": {
+      "REQUIRED": "Toda pessoa cadastrada deve ter uma matrícula."
+    },
+    "appointment_date": {
+      "REQUIRED": "É necessário marcar uma data."
+    },
+    "email": {
+      "REQUIRED": "Email é obrigatorio.",
+      "UNIQUE": "Email ja cadastrado."
+    }
+  },
+
+  "dia": {
+    "nome": {
+      "REQUIRED": "Dia deve ter um nome."
+    },
+    "identificacao": {
+      "REQUIRED": "Numero representando o dia é obrigatorio."
+    },
+    "hora_entrada":{
+      "REQUIRED": "Necessário uma hora de entrada."
+    }
+  },
+  "errors":{
+    "UNKNOW_ERROR": "Ocorreu um erro deconhecido.",
+    "UNEXPECTED_ERROR": "Ocorreu um erro inesperado"
+  },
+  "rtc":{
+    "previsao":{
+      "TOO_LOW_VALUE": "Previsão de saída é menor do que a hora atual.",
+      "TOO_HIGH_VALUE": "Previsão de saída é muito alta comparada ao horário de entrada."
+    },
+    "type_of_agent":{
+      "ROOT_AGENT": "Usuário do tipo ROOT não podem executar essa ação."
+    },
+    "exit_time":{
+      "TOO_LOW_VALUE": "Horário de saída é menor do que a hora atual.",
+      "TOO_HIGH_VALUE": "Horário de saída é muito alto comparado ao horário de entrada."
+    },
+    "incorrect_info":{
+      "ID": "As suas informações não iguais ao banco de dados, por favor faça o login novamente."
+    },
+    "new_entry":{
+      "ACTIVE_DAY":"Seu horário ainda está ativo, feche-o para criar uma nova entrada."
+    }
+  },
+  "handler":{
+    "update_basic_info_user":{
+      "INVALID_FIELDS": "Esses campos não podem ser atualizados."
+    },
+    "update_password_user":{
+      "INVALID_FIELDS": "Esses campos não podem ser atualizados.",
+      "INVALID_OLD_PASSWORD": "Senha de verificação inserida não está correta.",
+      "INVALID_VERIFICATION_PASSWORD": "Nova senha e confirmação não são iguais.",
+      "SAME_PASSWORD": "A nova senha é igual a antiga."
+    }
+  }
+}
