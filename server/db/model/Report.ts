@@ -40,7 +40,7 @@ let schema = new Schema(Object.assign({
     },
     user_jokes: {
         user: {
-            type: Schema.Types.String,
+            type: Schema.Types.ObjectId,
             ref: 'user',
             required: [true, messages.user.REQUIRED],
         },
@@ -49,12 +49,12 @@ let schema = new Schema(Object.assign({
             default: 0,
         },
         badJokes: {
-            type: Schema.Types.String,
+            type: Schema.Types.ObjectId,
             ref: 'joke',
             required: [true, messages.badJokes.REQUIRED],
         },
         goodJokes: {
-            type: Schema.Types.String,
+            type: Schema.Types.ObjectId,
             ref: 'joke',
             required: [true, messages.goodJokes.REQUIRED],
         }
