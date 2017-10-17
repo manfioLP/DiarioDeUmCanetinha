@@ -1,8 +1,9 @@
 import {BasicManager} from "../BasicManager";
 import {Model} from "../model/Report";
 
-export class Joke extends BasicManager {
+export class Report extends BasicManager {
     wire_custom_listeners() {}
+
 
     get model() {
         return Model;
