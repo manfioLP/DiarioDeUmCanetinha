@@ -31,6 +31,8 @@ let schema = new Schema(Object.assign({
     month: {
         type: Schema.Types.Number,
         required: [true, messages.month.REQUIRED],
+        min: 1,
+        max: 13
     },
     year: {
         type: Schema.Types.Number,
